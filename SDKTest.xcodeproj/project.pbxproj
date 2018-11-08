@@ -13,6 +13,7 @@
 		C609599E219199BE00921A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C609599D219199BE00921A1D /* Assets.xcassets */; };
 		C60959A1219199BE00921A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C609599F219199BE00921A1D /* LaunchScreen.storyboard */; };
 		C60959A4219199BE00921A1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C60959A3219199BE00921A1D /* main.m */; };
+		C60959FE219296F900921A1D /* SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60959FD219296F800921A1D /* SDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C60959A0219199BE00921A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C60959A2219199BE00921A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C60959A3219199BE00921A1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C60959FD219296F800921A1D /* SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDK.framework; path = SDKTest/SDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60959FE219296F900921A1D /* SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				C6095993219199BD00921A1D /* SDKTest */,
 				C6095992219199BD00921A1D /* Products */,
+				C60959F8219296CA00921A1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +73,14 @@
 				C60959A3219199BE00921A1D /* main.m */,
 			);
 			path = SDKTest;
+			sourceTree = "<group>";
+		};
+		C60959F8219296CA00921A1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C60959FD219296F800921A1D /* SDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +296,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDKTest",
+				);
 				INFOPLIST_FILE = SDKTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +316,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDKTest",
+				);
 				INFOPLIST_FILE = SDKTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
